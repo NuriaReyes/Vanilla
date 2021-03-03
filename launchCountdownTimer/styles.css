@@ -1,0 +1,56 @@
+/* Element styles */
+
+body {
+  background-image: url("./images/bg-stars.svg");
+  background-color: #211a29;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Class styles */
+
+.countdown {
+  text-align: center;
+  margin-top: 8em;
+}
+
+.title {
+  color: white;
+  margin-bottom: 1.5em;
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+}
+
+.date-box {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+.date {
+  height: 7em;
+  width: 7em;
+  background-color: #34364e;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 2px #1a1a22;
+}
+
+.date p {
+  color: #f86087;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  top: 0.3em;
+}
+
+.date-title {
+  margin-top: 2em;
+  color: #82829e;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  font-size: 0.7rem;
+}
+
+.hills {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
