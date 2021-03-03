@@ -2,55 +2,70 @@
 
 body {
   background-image: url("./images/bg-stars.svg");
-  background-color: #211a29;
-  font-family: "Montserrat", sans-serif;
+  background-color: hsl(235, 16%, 14%);
+  font-family: "Red Hat Text", sans-serif;
 }
 
 /* Class styles */
-
-.countdown {
-  text-align: center;
-  margin-top: 8em;
-}
-
-.title {
-  color: white;
-  margin-bottom: 1.5em;
-  font-size: 1.2rem;
-  letter-spacing: 0.4rem;
-}
-
-.date-box {
-  display: inline-block;
-  margin-right: 1.5em;
-}
-
-.date {
-  height: 7em;
-  width: 7em;
-  background-color: #34364e;
-  border-radius: 0.5em;
-  box-shadow: 0 10px 2px #1a1a22;
-}
-
-.date p {
-  color: #f86087;
-  font-size: 4em;
-  font-weight: bold;
-  position: relative;
-  top: 0.3em;
-}
-
-.date-title {
-  margin-top: 2em;
-  color: #82829e;
-  font-weight: bold;
-  letter-spacing: 0.4rem;
-  font-size: 0.7rem;
-}
-
 .hills {
   position: fixed;
   right: 0;
   bottom: 0;
+  z-index: -5;
+  width: 100%;
+  height: auto;
+}
+
+.countdown {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.5em;
+  font-size: 1.2rem;
+  letter-spacing: 0.6rem;
+}
+
+.date-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-box {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  /* align-content: center; */
+}
+
+.date {
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2em;
+  background-color: hsl(236, 21%, 26%);
+  box-shadow: 0 10px 2px hsl(234, 17%, 12%);
+  color: hsl(345, 95%, 68%);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.date-title {
+  margin-top: 1em;
+  color: hsl(237, 18%, 59%);
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
 }
